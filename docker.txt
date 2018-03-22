@@ -1,0 +1,65 @@
+$HOME
+  157  sudo yum -y install docker
+  158  clear
+  159  sudo service docker start
+  160  sudo service docker status
+  161  uname -a
+  162  docker ps
+  163  mkdir code
+  164  vi code/index.html
+  165  docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+  166  docker run -dit --name my-apache-app -p 8080:80 -v "$PWls -lrtD":/usr/local/apache2/htdocs/ httpd:2.4
+  167  ls -lrt
+  168  docker run -dit --name my-apache-app -p 8080:80 -v "$PWD/environment/code":/usr/local/apache2/htdocs/ httpd:2.4
+  169  docker rm 4dde40fd276bb40b1b3dbdb8e44e5f845dd24
+  170  docker stop 4dde40fd276bb40b1b3dbdb8e44e5f845dd24
+  171  docker rm 4dde40fd276bb40b1b3dbdb8e44e5f845dd24
+  172  docker info
+  173  docker run -dit --name my-apache-app -p 8080:80 -v "$PWD/environment/code":/usr/local/apache2/htdocs/ httpd:2.4
+  174  docker images
+  175  docker ps
+  176  docker ps-a
+  177  docker ps -a
+  178  pwd
+  179  ls -lrt
+  180  cd code/
+  181  ls -lrt
+  182  cat index.html 
+  183  docker ps
+  184  docker stop my-apache-app; docker rm my-apache-app
+  185  docker run -d --name my-apache-app -p 8080:80 -v /home/ec2-user/environment/code:/usr/local/apache2/htdocs/ httpd:2.4
+  186  docker inspect my-apache-app
+  187  ifconfig
+  188  docker stop my-apache-app
+  189  docker ps
+  190  docker -ps
+  191  docker ps -a
+  192  docker exec -it my-apache-app
+  193  docker start my-apache-app
+  194  docker exec -it my-apache-app
+  195  docker exec -it my-apache-app /bin/bash
+  196  ps -eaf 
+  197  ps -eaf |grep "httpd"
+  198  docker inspect my-apache-app |more
+  199  clear
+  200  cd ..
+  201  cd myapache/
+  202  docker build -t myapache:latest
+  203  docker build -t myapache:latest .
+  204  docker images
+  205  docker images -a
+  206  docker history myapache
+  207  ls -lrt
+  208  docker run  -d --name myapache-test -p 9000:80 myapache:latest
+  209  docker ps
+  210  docker ps -a
+  211  docker rm 9309d58b6c5f
+  212  docker build -t myapache:latest .
+  213  docker run  -d --name myapache-test -p 9000:80 myapache:latest
+  214  docker ps
+  215  docker ps -a
+  216  docker rm myapache-test
+  217  docker build -t myapache:latest .
+  218  docker run  -d --name myapache-test -p 9000:80 myapache:latest
+  219  docker ps
+  220  history
